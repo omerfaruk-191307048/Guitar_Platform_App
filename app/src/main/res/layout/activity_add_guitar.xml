@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activities.AddGuitarActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/add_guitar_activity_imageViewGitarResmi"
+                android:layout_width="240dp"
+                android:layout_height="300dp"
+                android:onClick="resimSec"
+                android:scaleType="fitXY"
+                android:src="@drawable/sec" />
+
+            <EditText
+                android:id="@+id/add_guitar_activity_editTextGitarIsmi"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:hint="Gitar ismini giriniz"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/add_guitar_activity_spinnerMarka"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/add_guitar_activity_radioBtnKlasik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Klasik"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/add_guitar_activity_radioBtnAkustik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Akustik"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/add_guitar_activity_radioBtnElektro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Elektro"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/add_guitar_activity_editGitarAciklama"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:hint="Gitar açıklamasını giriniz"
+                android:inputType="textMultiLine"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/add_guitar_activity_btnKaydet"
+                android:layout_width="230dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:enabled="false"
+                android:onClick="kitapKaydetOnClick"
+                android:text="Kaydet"
+                android:textAllCaps="false"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="getDataOnClick"
+
+                android:text="Get Data" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:id="@+id/activity_add_guitar_spinnerSelected"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

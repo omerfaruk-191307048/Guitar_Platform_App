@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FragmentHome">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/baslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Gitar Platformu'na"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/baslik_hg"
+            android:text="Hoşgeldiniz"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:layout_below="@+id/baslik"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtGitarAciklama"
+            android:text="  Gitar, çoğunluğu 6 telli, farklı türleri ile farklı tel sayısı, oktavı, çalma teknikleri içeren ses perdeli müzik aletidir. Çalanın vücuduna karşı düz tutulur ve baskın el ile telleri tıngırdatarak çalarken aynı anda seçilen telleri ses perdelerine karşı elin parmaklarıyla bastırarak çalınır. Tellere vurmak için pena veya parmak pick'leri kullanılabilir. Gitarın sesi ya enstrümandaki rezonans odası aracılığıyla akustik olarak yansıtılır ya da elektronik bir alıcı ve amplifikatörünce yükseltilir. \n\n
+ Gitar telli çalgı olarak sınıflandırılır - yani ses, iki sabit nokta arasında gerilmiş titreşen bir tel tarafından üretilir. Telleri bağırsak kirişi'nden yapılan gitar tarihsel olarak ahşaptan yapılmıştır. Çelik gitar telleri on dokuzuncu yüzyılın sonlarına doğru Amerika Birleşik Devletleri'nde piyasaya çıktı; naylon teller 1940'larda geldi. Gitarın ataları arasında gittern, vihuela, dört-kurs Rönesans gitarı ve beş sıralı barok gitar bulunur. Bunların hepsi modern altı telli enstrümanın gelişimine katkıda bulundu."
+            android:layout_below="@id/baslik_hg"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            />
+
+        <ImageView
+            android:id="@+id/imgGitarr"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtGitarAciklama"
+            android:src="@drawable/gitarrr" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtGitar"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Gitar Yapısı"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:layout_below="@id/imgGitarr"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:id="@+id/txtKlasik"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Sap; Üzerinde perdelerin bulunduğu bu sayede ise nota ve akortların basıldığı ince uzun bir alandır. En çok kullanılan alanlardan biri olan sap veya klavye bir ucunda burgular diğer ucunda ise gövde ile birleşmektedir. Gitarlara gönül verip yeni başlayanlar için ise kullanılması oldukça güç olan bu kısım zaman içerisinde parmaklarınız için gözü kapalı dans edebileceği bir pist haline dönüşecektir.\n\n
+Perde; Klavye yada diğer adıyla sap üzerinde yer alan birçok yerde fred olarak da adı geçen üzerinden geçen tellere göre dik bir açıda konumlandırılmış sapımızın çapının ölçüsüne oranla uzunluğu bulunan ilk bakışta pek bir anlam ifade etmeyen ince çizgilerdir. Gitarın çeşitine göre genel olarak ortalama 21 ve 24 adet perde bulunulabilir. İki perde arasındaki tam orta noktaya yeterli bir güç ile baskı uygulandığında almak istenilen en doğru sese ulaşırsınız. Gövdeye doğru gidildikçe sesler daha da incelmektedir. Çok önemli kısımlardan biri olan perdeler zaman içerisinde gitar çalan kişiler için yön bulma aracı haline dönüşecektir.\n\n
+Burgular; Gitar sapımızın en uç noktasında yer alan bölümdür. İki parmağımızla sıkıştırarak farlı yönlere çevrilebilen tellerin bir ucunun bağlandığı müzik aletimizi akort etmemize olanak tanıyan bölümdür. Yaramaz küçük çocukların kulaklarını bükmekten gelen dilimizde ki bir diğer adı ise kulaklardır.\n\n
+Köprü; Gövde deliğinden sonraki kısımda gövde üzerinde yer alan tellerin diğer ucunun ufak topuzlarla bağlandığı kısımdır. Gitarı kullanırken genel olarak bileğimizin altında şerit şeklinde yer almaktadır. Bu kısma gitarı kullanırken temas etmeyiz.\n\n
+Ses Deliği; En yaygın gitarlardan akustik ve klasik gitarlarda bulunan gövde üzerindeki geniş çaptaki köprünün yanında sapa doğru olan kısmında gövdenin üzerindeki deliktir. Amacı ise elektronik ses cihazına bağlanılmadan çalışan gitarlarda tellerin hareketinden çıkan sesi gitarın iç kısmına alarak dışarı veren gitardaki elde ettiğimiz ses için meydana gelen kısımdır. Bazı elektronik cihaza bağlan gitarlarda da bulunabilir bu demek oluyor ki bu gitar elektronik cihaz olmadan da kısıtlı bir ses seviyesinde kullanılabilir. Ses deliği bulunmayan bir elektrogitar amfi olmadan kullanılamaz.\n\n
+Gövde; Gitarımızın çetine göre farklı biçimlerde tasarlanmış gitarın en geniş kısmıdır. Üzerinde köprü ve ses deliği bulunan sesin tınısını belirleyen bölümdür.\n\n
+Teller; Gitardaki sesin ana kaynağıdır. Burgulardan başlayan sap üzerinden gövde deliği ve gövde üzerinden geçerek köprüye sabitlenen gitarın türüne göre sayısı değişen kalın veya ince ürünlerdir. Bakımı önemlidir gitarda en sık değişen parçalardır. Yeni başlayan kişilerin gitarını burgular yardımıyla akort ederken kopardığı çoğu zaman can yakan parçalardır."
+            android:layout_below="@+id/txtGitar"/>
+
+        <ImageView
+            android:id="@+id/imgGitar"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtKlasik"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gitar" />
+
+        <TextView
+            android:id="@+id/akustikBaslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgGitar"
+            android:layout_centerHorizontal="true"
+            android:text="Akustik Gitar"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtAkustikGitar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/akustikBaslik"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:text="Akustik gitar, görünüş olarak klasik gitara benzeyen fakat tellerin cinsi bakımından klasik gitardan farklı olarak çelik tel kullanılan, belli bir elektronik sisteme gerek duymadan klasik gitara oranla daha yüksek ses çıkarabilen bir gitar türüdür. Amplifikatöre bağlanan elektro akustik gitarlar da vardır. Akustik gitarın başlıca kullanıldığı müzik türleri blues, rock, pop'dur."
+            android:textColor="@color/black" />
+
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/imgKlasik"
+            android:src="@drawable/klasik"
+            android:layout_below="@+id/txtAkustikGitar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/klasikBaslik"
+            android:text="Klasik Gitar"
+            android:layout_below="@id/imgKlasik"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtKlasikAciklama"
+            android:layout_below="@+id/klasikBaslik"
+            android:text="  Klasik gitar (klasik gitar, naylon telli gitar veya İspanyol gitarı olarak da bilinir), klasik müzikte kullanılan gitar ailesinin bir üyesidir. Bağırsak veya naylondan yapılmış telleri olan bu akustik ahşap telli çalgı, metal telleri kullanan akustik ve elektro gitarın öncüsüdür. Klasik gitar on beşinci ve on altıncı yüzyılda İspanyol vihuela ve gittern'den türetilmiştir, daha sonra on yedinci ve on sekizinci yüzyıl Barok gitarına ve daha sonra on dokuzuncu yüzyılın ortalarında modern klasik gitara dönüşmüştür."
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"/>
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:id="@+id/imgElektro"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/elektro"
+            android:layout_below="@id/txtKlasikAciklama"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgElektro"
+            android:id="@+id/txtElektroBaslik"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:text="Elektro Gitar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtElektroAciklama"
+            android:layout_below="@+id/txtElektroBaslik"
+            android:text=" Elektro gitar veya elektronik gitar, sesini manyetikleri aracılığı ile elektrik akımına dönüştüren ve bir amplifikatör ile bu akımdan ses elde edilmesine olanak tanıyan gitar türüdür. \n\n
+Oluşturduğu sinyalin değiştirilebilir olması, ve zamanında bir devrim niteliği taşıyan yükseklikte bir sese sahip olması nedeniyle, kullanım alanı çok genişlemiş bir gitar türüdür.\n\n
+Elektronikteki gelişmeler ile tonal olarak sınırları 1960'lı yıllardan özellikleri ve çeşidi artan elektro gitarlar, özellikle 1980'li yılların başlarından itibaren üretilen süperstrat modeller başta olmak üzere günümüzün en bilindik enstrümanlardan biri haline gelmiştir."
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>

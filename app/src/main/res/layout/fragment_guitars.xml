@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FragmentGuitars">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btns">
+            <Button
+                android:layout_width="wrap_content"
+                android:id="@+id/fragment_guitar_btnGitarEkle"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="20dp"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:onClick="gitarEkleOnClick"
+                android:text="Gitar ekle"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/fragment_guitar_btnMarkaEkle"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/fragment_guitar_btnGitarEkle"
+                android:layout_height="wrap_content"
+                android:onClick="markaEkleOnClick"
+                android:text="Marka ekle"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:id="@+id/imgPage"
+            android:layout_below="@+id/btns"
+            android:src="@drawable/page"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragment_guitars_txt"
+            android:textAlignment="center"
+            android:text="Birbirinden güzel gitarları görüntülemek ve bilgi almak için tıklayınız!"
+            android:layout_below="@+id/imgPage"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:textSize="25sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_guitars_txt"
+            android:id="@+id/fragment_guitars_btnGoruntule"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:text="Gitarları görüntülemek için tıkla "
+            android:onClick="fragment_guitars_goruntuleOnClick"
+            android:drawableRight="@drawable/baseline_mouse_24"/>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/gilmour"
+            android:layout_below="@id/fragment_guitars_btnGoruntule"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="loginBgColor">#91851B</color>
+    <color name="loginTxtColor">#FFFFFF</color>
+    <color name="trans">#00000000 </color>
+    <color name="feedBackColor">#469749</color>
+    <color name="gitarFragmentBgColor">#68CAD6</color>
+    <color name="detayActivityTextColor">#000000</color>
+</resources>
